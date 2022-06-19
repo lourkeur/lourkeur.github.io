@@ -2,3 +2,6 @@ baseURL = 'https://lourkeur.github.io/blog/'
 languageCode = 'en-us'
 title = "Louis Bettens' Blog"
 theme = 'PaperMod'
+
+[security.exec]
+allow = ['^rst2html$']

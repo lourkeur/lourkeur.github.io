@@ -1,6 +1,7 @@
 {
   stdenvNoCC,
   hugo,
+  docutils,
 }:
 stdenvNoCC.mkDerivation {
   name = "blog";
@@ -9,7 +10,7 @@ stdenvNoCC.mkDerivation {
     name = "source";
   };
 
-  buildInputs = [hugo];
+  buildInputs = [hugo docutils];
 
   buildPhase = ''
     hugo

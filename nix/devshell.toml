@@ -2,3 +2,8 @@ name = "blog"
 
 [[commands]]
 package = "hugo"
+
+[[commands]]
+name = "rst2html"
+package = "docutils"
+help = "process ReStructuredText"
