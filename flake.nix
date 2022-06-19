@@ -24,8 +24,8 @@
       ];
 
       outputsBuilder = channels: {
-        defaultPackage = channels.nixpkgs.callPackage nix/package.nix {};
-        devShell = channels.nixpkgs.callPackage nix/devshell.nix {};
+        packages.default = channels.nixpkgs.callPackage nix/package.nix {};
+        devShells.default = channels.nixpkgs.callPackage nix/devshell.nix {};
       };
     };
 }
