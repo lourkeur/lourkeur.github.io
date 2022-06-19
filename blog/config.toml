@@ -2,4 +2,3 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Louis Bettens' Blog"
 theme = 'PaperMod'
-copyright = 'Some rights reserved, Louis Bettens'
