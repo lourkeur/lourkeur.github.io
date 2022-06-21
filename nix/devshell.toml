@@ -1,6 +1,10 @@
 name = "blog"
 
 [[commands]]
+name = "task"
+package = "go-task"
+
+[[commands]]
 package = "hugo"
 
 [[commands]]

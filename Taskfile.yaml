@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    deps: [ 'serve' ]
+  serve:
+    dir: blog/
+    cmds:
+      - hugo serve
