@@ -17,5 +17,5 @@ tasks:
       - hugo
   assets/copy:
     cmds:
-      - mkdir -p blog/static/
-      - cp $resume/resume.pdf blog/static/
+      - install -D $resume/resume.pdf blog/static/
+      - install -D $license_icon blog/themes/PaperMod/assets/png/cc-by-nd-80x15.png

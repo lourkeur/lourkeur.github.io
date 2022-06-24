@@ -22,6 +22,10 @@
       outputsBuilder = channels: with channels.nixpkgs; {
         packages.default = callPackage nix/package.nix {
           resume = inputs.resume.packages.${system}.default;
+          license_icon = fetchurl {
+            url = "https://i.creativecommons.org/l/by-nd/4.0/80x15.png";
+            sha256 = "16c63br97qzxvcfb55g77gnxw13qpfmc0rm36818mq0825gfz68y";
+          };
         };
       };
     };

@@ -1,5 +1,6 @@
 {
   stdenvNoCC,
+  license_icon,
   resume,
   go-task,
   hugo,
@@ -12,7 +13,7 @@ stdenvNoCC.mkDerivation {
     name = "source";
   };
 
-  inherit resume;
+  inherit license_icon resume;
 
   buildInputs = [go-task hugo docutils];
 
