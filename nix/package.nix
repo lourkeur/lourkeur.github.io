@@ -1,22 +1,23 @@
 {
   stdenvNoCC,
+  go-task,
   hugo,
   docutils,
 }:
 stdenvNoCC.mkDerivation {
   name = "blog";
   src = builtins.path {
-    path = ../blog;
+    path = ../.;
     name = "source";
   };
 
-  buildInputs = [hugo docutils];
+  buildInputs = [go-task hugo docutils];
 
   buildPhase = ''
-    hugo
+    task build
   '';
 
   installPhase = ''
-    cp -R public $out
+    cp -R blog/public $out
   '';
 }

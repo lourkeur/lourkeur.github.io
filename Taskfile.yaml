@@ -9,3 +9,7 @@ tasks:
     dir: blog/
     cmds:
       - hugo serve
+  build:
+    dir: blog/
+    cmds:
+      - hugo
