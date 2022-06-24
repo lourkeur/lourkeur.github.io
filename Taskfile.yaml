@@ -7,9 +7,15 @@ tasks:
     deps: [ 'serve' ]
   serve:
     dir: blog/
+    deps: [ 'assets/copy' ]
     cmds:
       - hugo serve
   build:
     dir: blog/
+    deps: [ 'assets/copy' ]
     cmds:
       - hugo
+  assets/copy:
+    cmds:
+      - mkdir -p blog/static/
+      - cp $resume/resume.pdf blog/static/

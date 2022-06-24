@@ -5,3 +5,35 @@ theme = 'PaperMod'
 
 [security.exec]
 allow = ['^rst2html$']
+
+[params.homeInfoParams]
+enabled = true
+title = "Louis Bettens"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/lourkeur"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:louis@bettens.info"
+
+[[params.socialIcons]]
+name = "cv"
+url = "/blog/resume.pdf"
+
+[[params.socialIcons]]
+name = "keybase"
+url = "https://keybase.io/lourkeur"
+
+[[params.socialIcons]]
+name = "matrix"
+url = "https://matrix.to/#/@lourkeur:nixos.dev"
+
+[[params.socialIcons]]
+name = "reddit"
+url = "https://reddit.com/user/lourkeur"
+
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/lourkeur"

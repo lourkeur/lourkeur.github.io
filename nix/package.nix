@@ -1,5 +1,6 @@
 {
   stdenvNoCC,
+  resume,
   go-task,
   hugo,
   docutils,
@@ -10,6 +11,8 @@ stdenvNoCC.mkDerivation {
     path = ../.;
     name = "source";
   };
+
+  inherit resume;
 
   buildInputs = [go-task hugo docutils];
 

@@ -8,6 +8,8 @@
   inputs.flake-compat.flake = false;
   inputs.nixpkgs.url = "nixpkgs/nixpkgs-unstable";
 
+  inputs.resume.url = "/home/louis/perso/resume";
+
   # Outputs are the public-facing interface to the flake.
   outputs = inputs @ {
     self,
@@ -18,7 +20,9 @@
       inherit self inputs;
 
       outputsBuilder = channels: with channels.nixpkgs; {
-        packages.default = callPackage nix/package.nix { };
+        packages.default = callPackage nix/package.nix {
+          resume = inputs.resume.packages.${system}.default;
+        };
       };
     };
 }
