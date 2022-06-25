@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+# Commit built site and push to GitHub pages.
+#
+# Preconditions: worktree is clean, site has been freshly built
+
+targetBranch=gh-pages
+siteDir=$(realpath blog/public)
+commitHash=$(git rev-parse HEAD)
+
+tempdir=$(mktemp -d)
+git worktree add --no-checkout "$tempdir" $targetBranch
+cleanup () {
+git worktree remove -f "$tempdir" 
+}
+trap cleanup EXIT
+
+git -C "$tempdir" --work-tree "$siteDir" add -A
+git -C "$tempdir" --work-tree "$siteDir" commit -m "deploy $commitHash"
+git -C "$tempdir" push

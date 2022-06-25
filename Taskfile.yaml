@@ -22,4 +22,4 @@ tasks:
   deploy:
     deps: [ 'build' ]
     cmds:
-      - go run deploy.go
+      - aux/deploy
