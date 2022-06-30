@@ -27,7 +27,7 @@ url = "mailto:louis@bettens.info"
 
 [[params.socialIcons]]
 name = "cv"
-url = "/resume.pdf"
+url = "/cv"
 
 [[params.socialIcons]]
 name = "keybase"
