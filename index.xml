@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Louis Bettens&#39; Blog</title>
-    <link>https://lourkeur.github.io/blog/</link>
-    <description>Recent content on Louis Bettens&#39; Blog</description>
+    <title>Louis Bettens&#39; Homepage</title>
+    <link>https://lourkeur.github.io/</link>
+    <description>Recent content on Louis Bettens&#39; Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lourkeur.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lourkeur.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://lourkeur.github.io/blog/posts/my-first-post/</link>
@@ -14,6 +14,16 @@
       
       <guid>https://lourkeur.github.io/blog/posts/my-first-post/</guid>
       <description>A Heading This is a test. A &#39;hello world&#39; if you will</description>
+    </item>
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://lourkeur.github.io/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lourkeur.github.io/cv/</guid>
+      <description>A copy of my CV (or résumé) is available below.
+Certain personal details have been withheld, please contact me to obtain the full version.</description>
     </item>
     
   </channel>

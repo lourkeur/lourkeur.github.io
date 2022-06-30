@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Louis Bettens&#39; Blog</title>
-    <link>https://lourkeur.github.io/blog/posts/</link>
-    <description>Recent content in Posts on Louis Bettens&#39; Blog</description>
+    <title>Louis Bettens&#39; Homepage</title>
+    <link>https://lourkeur.github.io/blog/</link>
+    <description>Recent content on Louis Bettens&#39; Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lourkeur.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lourkeur.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://lourkeur.github.io/blog/posts/my-first-post/</link>
