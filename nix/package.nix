@@ -7,7 +7,7 @@
   docutils,
 }:
 stdenvNoCC.mkDerivation {
-  name = "blog";
+  name = "homepage";
   src = builtins.path {
     path = ../.;
     name = "source";
@@ -22,6 +22,6 @@ stdenvNoCC.mkDerivation {
   '';
 
   installPhase = ''
-    cp -R blog/public $out
+    cp -R public $out
   '';
 }

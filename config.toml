@@ -1,14 +1,21 @@
-baseURL = 'https://lourkeur.github.io/blog/'
+baseURL = 'https://lourkeur.github.io/'
 languageCode = 'en-us'
-title = "Louis Bettens' Blog"
+title = "Louis Bettens' Homepage"
 theme = 'PaperMod'
 
 [security.exec]
 allow = ['^rst2html$']
 
-[params.homeInfoParams]
+[params.profileMode]
 enabled = true
 title = "Louis Bettens"
+imageUrl = "/avi.png"
+imageTitle = "silly profile picture of a Nix logo with cat features"
+
+[[params.profileMode.buttons]]
+name = "Blog"
+url = "/blog"
+
 
 [[params.socialIcons]]
 name = "github"
@@ -20,7 +27,7 @@ url = "mailto:louis@bettens.info"
 
 [[params.socialIcons]]
 name = "cv"
-url = "/blog/resume.pdf"
+url = "/resume.pdf"
 
 [[params.socialIcons]]
 name = "keybase"

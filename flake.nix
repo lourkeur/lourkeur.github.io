@@ -1,6 +1,6 @@
 # The flake file is the entry point for nix commands
 {
-  description = "My blog";
+  description = "My personal website";
 
   # Inputs are how Nix can use code from outside the flake during evaluation.
   inputs.fup.url = "github:gytis-ivaskevicius/flake-utils-plus/v1.3.1";

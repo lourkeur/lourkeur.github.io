@@ -6,7 +6,7 @@ set -e
 # Preconditions: worktree is clean, site has been freshly built
 
 targetBranch=gh-pages
-siteDir=$(realpath blog/public)
+siteDir=$(realpath ./public)
 commitHash=$(git rev-parse HEAD)
 
 tempdir=$(mktemp -d)

@@ -6,19 +6,17 @@ tasks:
   default:
     deps: [ 'serve' ]
   serve:
-    dir: blog/
     deps: [ 'assets/copy' ]
     cmds:
       - hugo serve
   build:
-    dir: blog/
     deps: [ 'assets/copy' ]
     cmds:
       - hugo
   assets/copy:
     cmds:
-      - install -D $resume/resume.pdf blog/static/
-      - install -D $license_icon blog/themes/PaperMod/assets/png/cc-by-nd-80x15.png
+      - install -D $resume/resume.pdf static/resume.pdf
+      - install -D $license_icon themes/PaperMod/assets/png/cc-by-nd-80x15.png
   deploy:
     deps: [ 'build' ]
     cmds:
