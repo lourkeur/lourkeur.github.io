@@ -31,7 +31,7 @@ url = "/cv"
 
 [[params.socialIcons]]
 name = "pgpkey"
-url = "assets/asc/5B939CFAE8FC4D8FE07A3AEADFE1D4A017337E2A.asc"
+url = "/pgpkey"
 
 [[params.socialIcons]]
 name = "keybase"
